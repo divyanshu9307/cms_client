@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { connect } from "react-redux";
 import { getIdCouponAction ,updateCouponAction} from "../redux/actions/coupon";
 
@@ -13,15 +13,21 @@ export class Edit extends Component {
       discountAmount: 0,
     };
   }
+  //  navigate = useNavigate();
+//    hrefFunction(){
+//     windows.location.href = "https://www.example.com";
+// }
   handleChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
     console.log(this.state);
   };
   handleEditSave=(id)=>{
   this.props.updateCouponAction(this.state,id);
-  // this.props.history.push('/')
+  this.props.history.push('/')
+  
   ;
 }
+
   async componentDidMount() {
 
     const data = window.location.pathname.slice(6);
@@ -41,7 +47,7 @@ export class Edit extends Component {
 
     return (
       <div>
-        <form onSubmit={()=>this.handleEditSave(this.props?.myCoupon?._id)}>
+        <form action="/" onSubmit={()=>this.handleEditSave(this.props?.myCoupon?._id)}>
         
           <label>
             offerName:
@@ -88,7 +94,7 @@ export class Edit extends Component {
           {/* <button  type="submit">Save Changes</button> */}
           {/* <button type='submit'><Link to='/'>Submixxxt</Link></button>  */}
           {/* <Link to="/"> */}
-            <button type="submit">Save Changes</button>
+            <button  type="submit">Save Changes</button>
           {/* </Link> */}
 
           <br></br>

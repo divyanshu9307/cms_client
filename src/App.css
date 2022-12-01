@@ -37,7 +37,7 @@
   }
 }
 .ab{
-background-color:#61dafb;
+background-color:#ADEFD1FF;
 width: 300px;
 height: 150px;
 }
@@ -58,13 +58,45 @@ height: 150px;
 }
 .navbar{
   width: auto;
-  background-color: rgb(249, 88, 8);
+  background-color: #00203FFF;
   height: 50px;
   display: flex ;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 15px;
+  color: #ADEFD1FF;
   /* flex-wrap: wrap; */
 }
 .nav1{
   padding-left: 20px;
 }
+.editAndDelete{
+  display: flex ;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+.cardDetails{
+  padding-left: 70px;
+  padding-top: 10px;
+  color: #00203FFF;
+}
+.nav2{
+  padding-right: 10px;
+  /* background-color: #ADEFD1FF; */
+}
+.button1{
+  background-color: #ADEFD1FF;
+  color: #00203FFF;
+}
+.button2{
+  background-color:white;
+  color: #00203FFF;
+}
+/* .button3{
+  background-color: #ADEFD1FF;
+  color: #00203FFF;
+} */

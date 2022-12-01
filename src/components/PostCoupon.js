@@ -22,8 +22,8 @@ export class PostCoupon extends Component {
   render() {
     return (
       <div>
-        AddCoupon
-        <form onSubmit={this.handleSubmit}>
+        
+        <form action="/" onSubmit={this.handleSubmit}>
           <label>
             offerName:
             <input

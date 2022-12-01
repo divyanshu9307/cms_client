@@ -9,6 +9,7 @@ import Nav from './components/Nav';
 // import Get from './components/Get';
 import GetCoupons from './components/GetCoupons';
 import Edit from './components/Edit';
+import CustomizedDialogs from './components/dialog';
 
 
 const App=()=> {
@@ -22,9 +23,7 @@ const App=()=> {
         
         <GetCoupons></GetCoupons>
         </Route>
-        <Route path='/add'>
-    <PostCoupon></PostCoupon>
-        </Route>
+        
         <Route path='/edit'>
         <Edit></Edit>
         </Route>
